@@ -7,8 +7,8 @@ var currentScrollPos = window.scrollY;
     var minCircumference = 400;
     var newCircumference;
 
-    var maxHeight = 200;
-    var minHeight = 150;
+    var maxHeight = 170;
+    var minHeight = 120;
     var newHeight;
 
     var maxImgHeight = 100;

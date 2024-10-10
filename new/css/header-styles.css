@@ -1,6 +1,6 @@
 :root{
-    --head-height: 200px;
-    --head-height-no-anim: 200px;
+    --head-height: 170px;
+    --head-height-no-anim: 170px;
     --head-circumference: 15000px;
     --logo-height: 100%;
 
@@ -68,14 +68,14 @@
     line-height: var(--head-height-no-anim);
     text-align: center;
 
-    font-size:26px;
+    font-size:28px;
     font-weight: 1000;
 }
     .h-side{
-        line-height: calc(var(--head-height-no-anim) - 10px);
+        line-height: calc(var(--head-height-no-anim) - 30px);
     }
     .h-middle{
-        line-height: calc(var(--head-height-no-anim) + 20px);
+        line-height: calc(var(--head-height-no-anim) + 0px);
     }
     .h-left{
         color: var(--green);
