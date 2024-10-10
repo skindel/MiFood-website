@@ -1,6 +1,11 @@
 :root{
     --head-height: 200px;
+    --head-height-no-anim: 200px;
     --head-circumference: 15000px;
+    --logo-height: 100%;
+
+    --scroll-anim-duration: 0.3s;
+
     --red: #e30000; 
     --green: #01af04;
 }
@@ -23,7 +28,7 @@
 
     position:absolute;
     left:50%;
-    top: calc(var(--head-circumference)*-1 + 220px);
+    top: calc(var(--head-circumference)*-1 + var(--head-height));
 
     transform: translate(-50%, 0);
 
@@ -34,7 +39,11 @@
     background-color: white;
     box-shadow: rgba(0,0,0,0.1) 0px 0px 50px 0px;
 
-    transition: width 0.7s, height 0.7s, top 0.7s;
+    transition: 
+        width var(--scroll-anim-duration) ease 0s, 
+        height var(--scroll-anim-duration) ease 0s, 
+        top var(--scroll-anim-duration) ease 0s;
+
 }
 .head-container{
     width: 90%;
@@ -42,6 +51,10 @@
 
     padding-left:5%;
     padding-right:5%;
+
+    clip-path: circle(calc(var(--head-circumference)/2) at 50% calc(var(--head-circumference)/-2 + var(--head-height)));
+
+    transition: clip-path var(--scroll-anim-duration) ease, height var(--scroll-anim-duration) ease;
 }
 
 .head-element{
@@ -52,17 +65,17 @@
     height: inherit;
     width: 16%;
 
-    line-height: var(--head-height);
+    line-height: var(--head-height-no-anim);
     text-align: center;
 
     font-size:26px;
     font-weight: 1000;
 }
     .h-side{
-        line-height: calc(var(--head-height) - 10px);
+        line-height: calc(var(--head-height-no-anim) - 10px);
     }
     .h-middle{
-        line-height: calc(var(--head-height) + 20px);
+        line-height: calc(var(--head-height-no-anim) + 20px);
     }
     .h-left{
         color: var(--green);
@@ -82,8 +95,13 @@
         padding-right:8%;
     }
     .head-element img{
-        max-width: 100%;
+        max-width: var(--logo-height);
         height: auto;
+
+        transition: max-width var(--scroll-anim-duration);
+
+        padding-bottom:20px;
+
     }
     .clearfix::after {
         content: "";
