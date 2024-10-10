@@ -1,0 +1,40 @@
+:root{
+    --head-circumference:12000px;
+}
+
+header{
+    height: 120px;
+
+    align-items: center;
+
+    margin-bottom: 70px;
+}
+.head-circle{
+    height: var(--head-circumference);
+    width: var(--head-circumference);
+
+    position:absolute;
+    left:50%;
+    top: calc(var(--head-circumference)*-1 + 220px);
+    transform: translate(-50%, 0);
+
+    
+    border-radius: 50%;
+
+    background-color: transparent;
+
+    box-shadow: rgba(0,0,0,0.1) 0px 0px 50px 0px;
+}
+.head-element{
+    height: inherit;
+    width: inherit;
+
+}
+    .head-element img{
+        display: block;
+
+        max-height: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
