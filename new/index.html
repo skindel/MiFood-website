@@ -3,6 +3,7 @@
 <head>
     <title>MiFood robots</title>
 
+    <!-- styles -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header-styles.css">
     <link rel="stylesheet" href="css/text-styles.css">
@@ -11,28 +12,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="head-circle"></div>
 
-        <div class="head-element side">
-            Contact
+
+</head>
+<body> 
+    <div id="header">
+
+        <div id="head-circle"></div>
+        <div class="head-container clearfix">
+            <div class="head-element h-side h-left">
+                Contact
+            </div>
+            <div class="head-element h-middle h-left">
+                Agriculture
+            </div>
+            <div class="head-element head-logo">
+                <img src="img/whitelogotransparent.png">
+            </div>
+            <div class="head-element h-middle h-right">
+                Restaurants
+            </div>
+            <div class="head-element h-side h-right">
+                Social Media
+            </div>
         </div>
-        <div class="head-element middle">
-            Agriculture
-        </div>
-        <div class="head-element head-logo">
-            <img src="img/whitelogotransparent.png">
-        </div>
-        <div class="head-element middle">
-            Restaurants
-        </div>
-        <div class="head-element side">
-            Social Media
-        </div>
-        <div style="clear:both"></div>
-    </header>
+
+
+    </div>
     <main>
         <div class="left-container">
             <div class="container-element content-text">
@@ -52,5 +58,8 @@
         </div>
 
     </main>
+
+    <!-- Scripts -->
+    <script src="js/head-anim.js"></script>
 </body>
 </html>

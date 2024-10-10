@@ -1,25 +1,30 @@
 :root{
     --head-height: 200px;
-    --head-circumference:15000px;
+    --head-circumference: 15000px;
+    --red: #e30000; 
+    --green: #01af04;
 }
 
-header{
-    width: 90%;
+#header{
+    position: fixed;
+
+    top:0;
+
+    width: 100%;
     height: var(--head-height);
 
     align-items: center;
 
     margin-bottom: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
 }
-.head-circle{
+#head-circle{
     height: var(--head-circumference);
     width: var(--head-circumference);
 
     position:absolute;
     left:50%;
     top: calc(var(--head-circumference)*-1 + 220px);
+
     transform: translate(-50%, 0);
 
     z-index: -1;
@@ -27,10 +32,21 @@ header{
     border-radius: 50%;
 
     background-color: white;
-
     box-shadow: rgba(0,0,0,0.1) 0px 0px 50px 0px;
+
+    transition: width 0.7s, height 0.7s, top 0.7s;
 }
+.head-container{
+    width: 90%;
+    height: var(--head-height);
+
+    padding-left:5%;
+    padding-right:5%;
+}
+
 .head-element{
+    z-index: 10;
+
     float:left;
 
     height: inherit;
@@ -40,13 +56,19 @@ header{
     text-align: center;
 
     font-size:26px;
-    font-weight: 550;
+    font-weight: 1000;
 }
-    .side{
+    .h-side{
         line-height: calc(var(--head-height) - 10px);
     }
-    .middle{
+    .h-middle{
         line-height: calc(var(--head-height) + 20px);
+    }
+    .h-left{
+        color: var(--green);
+    }
+    .h-right{
+        color: var(--red);
     }
 
     .head-logo{
@@ -56,10 +78,14 @@ header{
 
         width: 20%;
 
-        margin-left: 8%;
-        margin-right: 8%;
+        padding-left:8%;
+        padding-right:8%;
     }
     .head-element img{
         max-width: 100%;
         height: auto;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
     }
