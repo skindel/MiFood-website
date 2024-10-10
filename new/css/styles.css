@@ -2,7 +2,7 @@
     --red: #e30000; 
     --green: #01af04;
 
-    --c-radius: 1100px;
+    --circle-image-radius: 450px;
 }
 
 ::-webkit-scrollbar{
@@ -46,26 +46,35 @@ main{
         height: inherit;
     }
 
+.circle-image{
+    position: absolute;
 
-.circle-red{
-    background-color: var(--red);
+    right:-200px;
+    top: 500px;
 
-    border-radius: 50%;
-
-    box-shadow: rgba(0,0,0,0.7) 0px 0px 20px 0px;
+    z-index: -3;
+    
+    clip-path: circle(var(--circle-image-radius) at 50% 50%);
 }
-.circle-green{
-    background-color: var(--green);
+    .circle-image img{
+        width: calc(var(--circle-image-radius)*2);
+        height:auto;
+    }
+    .circle-shadow{
+        position: absolute;
+        right:-200px;
+        top: 510px;
+        z-index: -2;
 
-    border-radius: 50%;
-    z-index:-2;
-    box-shadow: rgba(0,0,0,0.7) 0px 0px 20px 0px;
-}
-.c-right{
-    height: var(--c-radius);
-    width: var(--c-radius);
+        height: calc(var(--circle-image-radius)*2);
+        width: calc(var(--circle-image-radius)*2);
 
-    position:absolute;
+        border-radius:50%;
 
-    left: 60%;
-}
+        background-image: url("../img/strawberry-robot.jpg");
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+
+        box-shadow: rgba(0,0,0,0.4) 0 0 30px 0;
+    }
