@@ -48,6 +48,4 @@ headbar.addEventListener('mouseout', () => {
     if(window.scrollY >= 100){
         toggleHead(minCircumference, minHeight, minImgHeight);
     }
-    
-
 });

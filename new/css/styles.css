@@ -46,24 +46,10 @@ main{
         height: inherit;
     }
 
-.circle-image{
-    position: absolute;
-
-    right:-200px;
-    top: 500px;
-
-    z-index: -3;
-    
-    clip-path: circle(var(--circle-image-radius) at 50% 50%);
-}
-    .circle-image img{
-        width: calc(var(--circle-image-radius)*2);
-        height:auto;
-    }
-    .circle-shadow{
+    .circle-image{
         position: absolute;
         right:-200px;
-        top: 510px;
+        top: 400px;
         z-index: -2;
 
         height: calc(var(--circle-image-radius)*2);
