@@ -1,22 +1,28 @@
 var prevScrollpos = window.scrollY;
 
+function toggleHead(newCircumference,newHeight,newImgHeight){
+    document.documentElement.style.setProperty('--head-circumference', newCircumference + 'px');
+    document.documentElement.style.setProperty('--head-height', newHeight + 'px');
+    document.documentElement.style.setProperty('--logo-height', newImgHeight + '%');
+}
+
+var maxCircumference = 13000; 
+var minCircumference = 300;
+var newCircumference;
+
+var maxHeight = 120;
+var minHeight = 120;
+var newHeight;
+
+var maxImgHeight = 100;
+var minImgHeight = 50;
+var newImgHeight;
+
 window.onscroll = function() {
-var currentScrollPos = window.scrollY;
-
-    var maxCircumference = 15000; 
-    var minCircumference = 400;
-    var newCircumference;
-
-    var maxHeight = 170;
-    var minHeight = 120;
-    var newHeight;
-
-    var maxImgHeight = 100;
-    var minImgHeight = 50;
-    var newImgHeight;
+    var currentScrollPos = window.scrollY;
 
     // Calculate new Circumference based on scroll direction
-    if (prevScrollpos > currentScrollPos) {
+    if (currentScrollPos < 100) {
         newCircumference = maxCircumference; // Scroll up
         newHeight = maxHeight;
         newImgHeight = maxImgHeight;
@@ -27,8 +33,21 @@ var currentScrollPos = window.scrollY;
     }
 
     // Set the Circumference CSS variable smoothly
-    document.documentElement.style.setProperty('--head-circumference', newCircumference + 'px');
-    document.documentElement.style.setProperty('--head-height', newHeight + 'px');
-    document.documentElement.style.setProperty('--logo-height', newImgHeight + '%');
+    toggleHead(newCircumference,newHeight,newImgHeight);
 prevScrollpos = currentScrollPos;
 }
+
+const headbar = document.getElementById("header");
+
+headbar.addEventListener('mouseover', () => {
+    toggleHead(maxCircumference, maxHeight, maxImgHeight);
+
+});
+
+headbar.addEventListener('mouseout', () => {
+    if(window.scrollY >= 100){
+        toggleHead(minCircumference, minHeight, minImgHeight);
+    }
+    
+
+});

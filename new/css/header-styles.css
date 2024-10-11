@@ -1,7 +1,7 @@
 :root{
-    --head-height: 170px;
-    --head-height-no-anim: 170px;
-    --head-circumference: 15000px;
+    --head-height: 120px;
+    --head-height-no-anim: 120px;
+    --head-circumference: 13000px;
     --logo-height: 100%;
 
     --scroll-anim-duration: 0.3s;
@@ -54,7 +54,7 @@
 
     clip-path: circle(calc(var(--head-circumference)/2) at 50% calc(var(--head-circumference)/-2 + var(--head-height)));
 
-    transition: clip-path var(--scroll-anim-duration) ease, height var(--scroll-anim-duration) ease;
+    transition: clip-path var(--scroll-anim-duration) ease 0s, height var(--scroll-anim-duration) ease 0s;
 }
 
 .head-element{
@@ -98,7 +98,7 @@
         max-width: var(--logo-height);
         height: auto;
 
-        transition: max-width var(--scroll-anim-duration);
+        transition: max-width calc(var(--scroll-anim-duration)) ease 0s;
 
         padding-bottom:20px;
 
