@@ -28,7 +28,7 @@ a{
 main{
     height:auto;
 
-    margin-top: 150px;
+    margin-top: 100px;
 }
 .left-container{
     height: 600px;
@@ -64,3 +64,6 @@ main{
 
         box-shadow: rgba(0,0,0,0.4) 0 0 30px 0;
     }
+        #circle-c-1{
+            
+        }

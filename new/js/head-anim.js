@@ -22,7 +22,7 @@ window.onscroll = function() {
     var currentScrollPos = window.scrollY;
 
     // Calculate new Circumference based on scroll direction
-    if (currentScrollPos < 100) {
+    if (currentScrollPos < 70) {
         newCircumference = maxCircumference; // Scroll up
         newHeight = maxHeight;
         newImgHeight = maxImgHeight;
@@ -37,7 +37,7 @@ window.onscroll = function() {
 prevScrollpos = currentScrollPos;
 }
 
-const headbar = document.getElementById("header");
+const headbar = document.getElementById("head-logo");
 
 headbar.addEventListener('mouseover', () => {
     toggleHead(maxCircumference, maxHeight, maxImgHeight);
