@@ -45,7 +45,7 @@
         top var(--scroll-anim-duration) ease 0s;
 
 }
-.head-container{
+#head-container{
     width: 90%;
     height: var(--head-height);
 
