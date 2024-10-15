@@ -3,26 +3,26 @@ var prevScrollpos = window.scrollY;
 function toggleHead(newCircumference,newHeight,newImgHeight){
     document.documentElement.style.setProperty('--head-circumference', newCircumference + 'px');
     document.documentElement.style.setProperty('--head-height', newHeight + 'px');
-    document.documentElement.style.setProperty('--logo-height', newImgHeight + '%');
+    document.documentElement.style.setProperty('--logo-height', newImgHeight + 'px');
 }
 
 var maxCircumference = 14000; 
 var minCircumference = 300;
 var newCircumference;
 
-var maxHeight = 120;
-var minHeight = 120;
+var maxHeight = 140;
+var minHeight = 100;
 var newHeight;
 
-var maxImgHeight = 100;
-var minImgHeight = 50;
+var maxImgHeight = 80;
+var minImgHeight = 40;
 var newImgHeight;
 
 window.onscroll = function() {
     var currentScrollPos = window.scrollY;
 
     // Calculate new Circumference based on scroll direction
-    if (currentScrollPos < 70) {
+    if (currentScrollPos < 10) {
         newCircumference = maxCircumference; // Scroll up
         newHeight = maxHeight;
         newImgHeight = maxImgHeight;

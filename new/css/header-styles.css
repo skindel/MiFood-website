@@ -1,8 +1,8 @@
 :root{
-    --head-height: 120px;
-    --head-height-no-anim: 120px;
-    --head-circumference: 13000px;
-    --logo-height: 100%;
+    --head-height: 140px;
+    --head-height-no-anim: 140px;
+    --head-circumference: 14000px;
+    --logo-height: 80px;
 
     --scroll-anim-duration: 0.3s;
 
@@ -63,7 +63,7 @@
     float:left;
 
     height: inherit;
-    width: 16%;
+    width: 18%;
 
     line-height: var(--head-height-no-anim);
     text-align: center;
@@ -91,14 +91,14 @@
 
         width: 20%;
 
-        padding-left:8%;
-        padding-right:8%;
+        padding-left:4%;
+        padding-right:4%;
     }
     .head-element img{
-        max-width: var(--logo-height);
-        height: auto;
+        max-width: auto;
+        height: var(--logo-height);
 
-        transition: max-width calc(var(--scroll-anim-duration)) ease 0s;
+        transition: height calc(var(--scroll-anim-duration)) ease 0s;
 
         padding-bottom:20px;
 
