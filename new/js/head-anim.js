@@ -21,13 +21,13 @@ var newImgHeight;
 window.onscroll = function() {
     var currentScrollPos = window.scrollY;
 
-    // Calculate new Circumference based on scroll direction
-    if (currentScrollPos < 10) {
-        newCircumference = maxCircumference; // Scroll up
+    
+    if (currentScrollPos < 5) {
+        newCircumference = maxCircumference; 
         newHeight = maxHeight;
         newImgHeight = maxImgHeight;
     } else {
-        newCircumference = minCircumference; // Scroll down
+        newCircumference = minCircumference; 
         newHeight = minHeight;
         newImgHeight = minImgHeight;
     }

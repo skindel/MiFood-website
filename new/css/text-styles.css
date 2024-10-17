@@ -1,4 +1,9 @@
 /*Content text*/
+.main-title{
+    font-size: 70px;
+    font-weight: 500;
+}
+
 .text-title{
     padding: 20px;
 

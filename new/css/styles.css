@@ -1,12 +1,10 @@
 :root{
     --red: #e30000; 
     --green: #01af04;
-
-    --circle-image-radius: 450px;
 }
 
 ::-webkit-scrollbar{
-    /*display:none;*/
+    display:none;
 }
 html, body{
     font-family: "Nunito", serif;
@@ -35,10 +33,22 @@ main{
 
 .center-container{
     width:100%;
-    height: 600px;
+    height: 500px;
 
     margin-top:150px;
 }
+    .center-align-text{
+        width: fit-content;
+        height: 100%;
+        
+        padding-top:170px;
+
+        margin-left:auto;
+        margin-right:auto;
+
+        text-align:center;
+        line-height: normal;
+    }
 .center-content{
     position:sticky;
 
@@ -53,6 +63,28 @@ main{
 
     background-color: rgb(224, 224, 224);
 }
+
+
+.left-container{
+    height: 600px;
+
+    padding-left: 100px;
+    padding-top: 200px;
+}
+.left-element{
+    float:left;
+    
+    height: inherit;
+}
+    .content-text{
+        width:40%;
+        height: inherit;
+    }
+    
+
+
+
+    /*      --- TILES ---
     .center-tiles{
         display:flex;
         
@@ -109,46 +141,4 @@ main{
         background-color: gray;
 
         border-radius: 2px;
-    }
-
-.left-container{
-    height: 600px;
-
-    padding-left: 100px;
-    padding-top: 200px;
-}
-.left-element{
-    float:left;
-    
-    height: inherit;
-}
-    .content-text{
-        width:40%;
-        height: inherit;
-    }
-    .circle-image-xlarge{
-        position: absolute;
-
-        right:-10%;
-
-        margin-left: 10%;
-        margin-top: 10%;
-        
-        z-index: -2;
-
-        height: calc(var(--circle-image-radius)*2);
-        width: calc(var(--circle-image-radius)*2);
-
-        border-radius:50%;
-
-        background-image: url("../img/strawberry-robot.jpg");
-        background-position: center; 
-        background-repeat: no-repeat; 
-        background-size: cover;
-
-        box-shadow: rgba(0,0,0,0.4) 0 0 30px 0;
-    }
-        #circle-c-1{
-            
-        }
-
+    }*/

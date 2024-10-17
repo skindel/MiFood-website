@@ -1,0 +1,113 @@
+:root{
+    --c-xl-radius: 450px;
+    --c-l-radius: 200px;
+    --c-m-radius: 120px;
+    --c-s-radius: 90px;
+}
+
+@keyframes slide-2 {
+    from {
+        left: -90px;
+    } to {
+        left:-500px;
+    }
+}
+
+@keyframes slide-3 {
+    from {
+        top: 400px;
+        right:0px;
+    } to {
+        top: 1000px;
+        right:-500px;
+    }
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+    #c-img-2{
+        animation: slide-2 ease-in both;
+        animation-timeline: scroll();
+        animation-range: 200px 500px;
+    }
+    #c-img-3{
+        animation: slide-3 ease-in both;
+        animation-timeline: scroll();
+        animation-range: 200px 500px;
+    }
+}
+
+
+.circle{
+    position: fixed;
+    
+    z-index: -2;
+
+    border-radius:50%;
+
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+
+    box-shadow: rgba(0,0,0,0.4) 0 0 30px 0;
+}
+
+/* circles */
+.c-image-xl{
+    height: calc(var(--c-xl-radius)*2);
+    width: calc(var(--c-xl-radius)*2);
+}
+.c-image-l{
+    height: calc(var(--c-l-radius)*2);
+    width: calc(var(--c-l-radius)*2);
+}
+    
+.c-image-m{
+    height: calc(var(--c-m-radius)*2);
+    width: calc(var(--c-m-radius)*2);
+}
+
+.c-image-s{
+    height: calc(var(--c-s-radius)*2);
+    width: calc(var(--c-s-radius)*2);
+}
+
+/*      TITLE PAGE       */
+
+/* images */
+
+#c-img-2{
+    background-image: url("../img/strawberry-robot.jpg");
+
+    top:20px;
+}
+#c-img-3{
+    background-image: url("../img/strawberry-robot.jpg");
+
+    top:400px;
+}
+#c-img-4{
+    background-image: url("../img/strawberry-robot.jpg");
+
+    top:20px;
+}
+
+
+/*      CONTENT      */ 
+
+/* images */
+
+#c-img-1{
+    background-image: url("../img/strawberry-robot.jpg");
+}
+
+/* circles */
+
+    .c-xl-right{
+        right:-10%;
+    }
+    .c-xl-first{
+        margin-left: 10%;
+        margin-top: 10%;
+    }
