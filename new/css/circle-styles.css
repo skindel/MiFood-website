@@ -1,10 +1,11 @@
 :root{
-    --c-xl-radius: 450px;
+    --c-xl-radius: 300px;
     --c-l-radius: 200px;
-    --c-m-radius: 120px;
-    --c-s-radius: 90px;
+    --c-m-radius: 150px;
+    --c-s-radius: 120px;
 }
 
+/*
 @keyframes slide-2 {
     from {
         left: -90px;
@@ -37,10 +38,10 @@
         animation-range: 200px 500px;
     }
 }
-
+*/
 
 .circle{
-    position: fixed;
+    position:absolute;
     
     z-index: -2;
 
@@ -81,16 +82,19 @@
     background-image: url("../img/strawberry-robot.jpg");
 
     top:20px;
+    right: 2%;
 }
 #c-img-3{
     background-image: url("../img/strawberry-robot.jpg");
 
-    top:400px;
+    top:450px;
+    left:20%;
 }
 #c-img-4{
     background-image: url("../img/strawberry-robot.jpg");
 
-    top:20px;
+    top:50px;
+    left: 4%;
 }
 
 
@@ -105,9 +109,16 @@
 /* circles */
 
     .c-xl-right{
-        right:-10%;
+        right:20px;
     }
-    .c-xl-first{
+    .c-xl-left{
+        left:20px;
+    }
+    .c-xl-first-r{
         margin-left: 10%;
-        margin-top: 10%;
+        margin-top: 0;
+    }
+    .c-xl-first-l{
+        margin-right: 10%;
+        margin-top: 0;
     }

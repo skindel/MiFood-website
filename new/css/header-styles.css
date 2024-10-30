@@ -1,8 +1,8 @@
 :root{
-    --head-height: 140px;
-    --head-height-no-anim: 140px;
+    --head-height: 110px;
+    --head-height-no-anim: 110px;
     --head-circumference: 14000px;
-    --logo-height: 80px;
+    --logo-height: 40px;
 
     --scroll-anim-duration: 0.3s;
 
@@ -68,7 +68,7 @@
     line-height: var(--head-height-no-anim);
     text-align: center;
 
-    font-size:28px;
+    font-size:20px;
     font-weight: 1000;
 }
     .h-side{
@@ -88,7 +88,7 @@
         display: flex;
         align-items: center;
         justify-content: center; 
-
+        
         width: 20%;
 
         padding-left:4%;
