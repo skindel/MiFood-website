@@ -9,9 +9,17 @@
     font-size: 50px;
     font-weight: 700;
 }
+.text-title-2{
+    font-size: 50px;
+    font-weight: 700;
+}
+
 .text-content{
     padding: 20px;
     
     font-size: 30px;
     font-weight: 300;
+}
+.text-window-head{
+    font-size:60px;
 }
