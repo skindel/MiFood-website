@@ -13,7 +13,6 @@ html, body{
 
     scroll-behavior: smooth;
 
-
     margin: 0;
     padding: 0; 
 }
@@ -38,7 +37,7 @@ main{
     font-weight: 600;
 }
 .center-container{
-    margin-top: 150px;
+    margin-top: 200px;
     width:100%;
     height: 500px;
 }
@@ -65,8 +64,8 @@ main{
     padding-top: 200px;
 }    
     .center-window{
-        width: 90%;
-        height: 90%;
+        width: 1200px;
+        height: 600px;
 
         margin-top:auto;
         margin-right:auto;
@@ -125,10 +124,56 @@ main{
     height: inherit;
 }
 
+footer{
+    width:90%;
+    height: 400px; 
 
-    
+    margin-top: 100px;
+    margin-left:5%;
+    margin-right:5%;
+}
+    .footer-left{
+        height: 100%;
 
+    }
+    .list-contact{
+        width:200px;
+        padding:50px;
+        font-size: 20px;
 
+        line-height: 35px;
+        margin-left: 0;
+        float:left;
+    }
+        .list-contact::after{
+            clear:both;
+        }
+
+        .list-contact p{
+            font-size: 30px;
+            font-weight: 700;
+
+            margin-bottom:10px;
+
+        }
+        .list-contact ul{
+            list-style:none;
+        }
+    footer a{
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        color:inherit;
+
+        transition: color 0.2s;
+    }
+        footer a:hover{
+            color:rgba(0, 0, 0, 0.527);
+        }
+        .footer-copyright{
+
+            padding: 100px;
+            padding-top: 20px;
+        }
 
     /*      --- TILES ---
     .center-tiles{
