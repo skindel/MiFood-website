@@ -22,6 +22,8 @@ a{
     color:inherit;
 }
 
+video{
+}
 
 
 main{
@@ -33,7 +35,7 @@ main{
     background-repeat: no-repeat; 
     background-size: cover;
 
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
 }
 .center-container{
@@ -109,7 +111,42 @@ main{
         width:40%;
         height: inherit;
     }
+        .left-element.content-text{
+            margin-right: 10%;
+        }
+    .content-image{
+        width: 50%;
+        max-height: 95%;
 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+
+        border-radius: 100px 0 0 100px;
+    }
+    .left-element.icons-content{
+        margin-top: 30px;
+    }
+.icons-content{
+    margin-top:30px;
+}
+    .icons-content img{
+        width: 90px;
+        margin-left: 10px;
+        margin-bottom:10px; 
+    }
+        .left-element.icons-content img{
+            float:left;
+        }
+
+    .content-video{
+        width: 50%;
+    }
+#video-ai-robot{
+    object-fit: fill;
+    height:100%;
+    float:left;
+}
 .right-container{
     height: 600px;
 
@@ -123,6 +160,22 @@ main{
     
     height: inherit;
 }
+    .right-element.content-text{
+        margin-left:10%;
+    }
+    .right-element.content-image{
+        border-radius: 0 100px 100px 0;
+    }
+    .right-element.icons-content img{
+        float:right;
+    }
+
+
+
+
+/*      ---FOOTER---      */
+
+
 
 footer{
     width:90%;
@@ -138,19 +191,17 @@ footer{
     }
     .list-contact{
         width:200px;
+        height: 250px;
         padding:50px;
-        font-size: 20px;
+        font-size: 18px;
 
         line-height: 35px;
         margin-left: 0;
         float:left;
     }
-        .list-contact::after{
-            clear:both;
-        }
 
         .list-contact p{
-            font-size: 30px;
+            font-size: 27px;
             font-weight: 700;
 
             margin-bottom:10px;
@@ -170,7 +221,7 @@ footer{
             color:rgba(0, 0, 0, 0.527);
         }
         .footer-copyright{
-
+            clear:both;
             padding: 100px;
             padding-top: 20px;
         }

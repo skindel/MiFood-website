@@ -10,8 +10,8 @@ var maxCircumference = 14000;
 var minCircumference = 300;
 var newCircumference;
 
-var maxHeight = 110;
-var minHeight = 100;
+var maxHeight = 100;
+var minHeight = 90;
 var newHeight;
 
 var maxImgHeight = 50;

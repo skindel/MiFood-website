@@ -6,7 +6,7 @@
 .text-title{
     padding: 20px;
 
-    font-size: 50px;
+    font-size: 42px;
     font-weight: 700;
 }
 .text-title-2{
@@ -17,9 +17,9 @@
 .text-content{
     padding: 20px;
     
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 300;
 }
 .text-window-head{
-    font-size:60px;
+    font-size:54px;
 }
