@@ -46,15 +46,17 @@
 
 }
 #head-container{
-    width: 90%;
-    height: var(--head-height);
+    width: 1100px;
 
-    padding-left:5%;
-    padding-right:5%;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: var(--head-height);
 
     clip-path: circle(calc(var(--head-circumference)/2) at 50% calc(var(--head-circumference)/-2 + var(--head-height)));
 
     transition: clip-path var(--scroll-anim-duration) ease 0s, height var(--scroll-anim-duration) ease 0s;
+
 }
 
 .head-element{
@@ -63,7 +65,8 @@
     float:left;
 
     height: inherit;
-    width: 18%;
+    /*width: 18%;*/
+    width: 200px;
 
     line-height: var(--head-height-no-anim);
     text-align: center;
@@ -88,11 +91,10 @@
         display: flex;
         align-items: center;
         justify-content: center; 
-        
-        width: 20%;
 
-        padding-left:4%;
-        padding-right:4%;
+        padding-left:50px;
+        padding-right:50px;
+        
     }
     .head-element img{
         max-width: auto;

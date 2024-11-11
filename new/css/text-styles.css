@@ -1,6 +1,6 @@
 /*Content text*/
 .main-title{
-
+    font-size: 55px;
 }
 
 .text-title{
@@ -17,7 +17,7 @@
 .text-content{
     padding: 20px;
     
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 300;
 }
 .text-window-head{
