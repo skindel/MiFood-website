@@ -37,13 +37,8 @@
     transition: all ease 0.1s;
 }
     .sb-fr:hover{
-        /*background-color: #01af049a;
-        
-        cursor: pointer;
 
-        box-shadow: 0 0 5px 0  var(--green);*/
         box-shadow: 0 0 20px 0  rgba(128, 128, 128, 0.189);
-        
     }
 
 .contact-form input{
@@ -75,5 +70,3 @@
     .contact-link:hover{
         color:var(--green);
     }
-    
-

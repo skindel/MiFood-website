@@ -6,11 +6,19 @@ function toggleHead(newCircumference,newHeight,newImgHeight){
     document.documentElement.style.setProperty('--logo-height', newImgHeight + 'px');
 }
 
+
+
 var maxCircumference = 14000; 
 var minCircumference = 300;
 var newCircumference;
 
-var maxHeight = 100;
+var width = window.innerWidth;
+
+if(screen.width <= 950){
+    var maxHeight = 200;
+} else {
+    var maxHeight = 100;
+}
 var minHeight = 90;
 var newHeight;
 
@@ -18,14 +26,24 @@ var maxImgHeight = 50;
 var minImgHeight = 40;
 var newImgHeight;
 
+
+
+
+
+
+console.log(width);
+console.log(maxHeight);
+console.log(width <= 950);
+
+
 window.onscroll = function() {
     var currentScrollPos = window.scrollY;
-
     
     if (currentScrollPos < 5) {
         newCircumference = maxCircumference; 
         newHeight = maxHeight;
         newImgHeight = maxImgHeight;
+        console.log(newHeight);
     } else {
         newCircumference = minCircumference; 
         newHeight = minHeight;
@@ -45,7 +63,6 @@ headbar.addEventListener('mouseover', () => {
 });
 
 headbar.addEventListener('mouseout', () => {
-    console.log("out")
     if(window.scrollY >= 100){
         toggleHead(minCircumference, minHeight, minImgHeight);
     }

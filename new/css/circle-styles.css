@@ -97,6 +97,40 @@
     left: 4%;
 }
 
+@media (max-width: 1400px){
+    .title-container .title-circle{
+        display:none;
+        
+    }
+    #c-img-2{
+
+    }
+    #c-img-3{
+        /*display:none;*/
+
+    }
+    #c-img-4{
+        /*display:none;*/
+
+    }
+}
+@media (min-width: 2000px){
+    #c-img-2{
+        right:unset;
+        left: 75%;
+    }
+    #c-img-3{
+        /*display:none;*/
+        left:unset;
+        right:70%;
+    }
+    #c-img-4{
+        /*display:none;*/
+        left:unset;
+        right:80%;
+    }
+}
+
 
 /*      CONTENT      */ 
 
