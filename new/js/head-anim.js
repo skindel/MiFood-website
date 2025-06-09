@@ -14,8 +14,8 @@ var newCircumference;
 
 var width = window.innerWidth;
 
-if(screen.width <= 950){
-    var maxHeight = 200;
+if(screen.width <= 500){
+    var maxHeight = 100;
 } else {
     var maxHeight = 100;
 }

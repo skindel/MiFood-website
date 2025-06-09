@@ -1,5 +1,6 @@
+
 :root{
-    --head-height: 100px;
+    --head-height: 100px;   
     --head-height-no-anim: 100px;
     --head-circumference: 30000px;
     --logo-height: 40px;
@@ -46,7 +47,7 @@
 
 }
 #head-container{
-    width: 1100px;
+    width: 300px;
 
     margin-left: auto;
     margin-right: auto;
@@ -60,70 +61,44 @@
 }
 
 .head-part{
-    width:fit-content;
-    height:fit-content;
-    float:left;
-}
-.head-element{
-    z-index: 10;
-
     float:left;
 
-    height: var(--head-height);
-    width: 200px;
-
-    line-height: var(--head-height-no-anim);
-    text-align: center;
-
-    font-size:20px;
-    font-weight: 1000;
+    height: calc(var(--head-height)/2);
+    width: 150px;
 }
 
+    .head-element{
+        z-index: 10;
+        float: none;
 
-    .h-side{
+        width: 150px;
+        height: calc(var(--head-height)/2);
+
+        line-height: calc(var(--head-height)/2);
+        text-align: center;
+
+        font-size:20px;
+        font-weight: 1000;
+            
+    }
+
+    /* .h-side{
         line-height: calc(var(--head-height-no-anim) - 15px);
     }
     .h-middle{
         line-height: calc(var(--head-height-no-anim) - 15px);
-    }
+    } */
     .h-left{
         color: var(--green);
     }
     .h-right{
         color: var(--red);
     }
-
     .head-logo{
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-
-        padding-left:50px;
-        padding-right:50px;
+        display:none;
+        width:0;
+        height:0;
     }
     .head-element img{
-        max-width: auto;
-        height: var(--logo-height);
-
-        transition: height calc(var(--scroll-anim-duration)) ease 0s;
-
-        padding-bottom:20px;
-
+        /*nothing*/
     }
-    .clearfix::after {
-        content: "";
-        clear: both;
-    }
-
-@media (max-width:1300px){
-    .head-element{
-        width: 180px;
-    }
-    .head-logo{
-        padding-left:25px;
-        padding-right:25px;
-    }
-    #head-container{
-        width: 950px;
-    }
-}

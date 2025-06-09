@@ -5,41 +5,6 @@
     --c-s-radius: 120px;
 }
 
-/*
-@keyframes slide-2 {
-    from {
-        left: -90px;
-    } to {
-        left:-500px;
-    }
-}
-
-@keyframes slide-3 {
-    from {
-        top: 400px;
-        right:0px;
-    } to {
-        top: 1000px;
-        right:-500px;
-    }
-}
-
-
-
-@media (prefers-reduced-motion: no-preference) {
-    #c-img-2{
-        animation: slide-2 ease-in both;
-        animation-timeline: scroll();
-        animation-range: 200px 500px;
-    }
-    #c-img-3{
-        animation: slide-3 ease-in both;
-        animation-timeline: scroll();
-        animation-range: 200px 500px;
-    }
-}
-*/
-
 .circle{
     position:absolute;
     
