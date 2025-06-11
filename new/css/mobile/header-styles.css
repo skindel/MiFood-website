@@ -1,3 +1,4 @@
+
 :root{
     --head-height: 60px;   
     --head-height-no-anim: 100px;
@@ -70,7 +71,7 @@
         line-height: calc(var(--head-height)/2.5);
         text-align: left;
 
-        font-size:15px;
+        font-size:13px;
         font-weight: 800;
     }
 

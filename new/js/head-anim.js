@@ -26,7 +26,7 @@ var maxImgHeight = 50;
 var minImgHeight = 40;
 var newImgHeight;
 
-if (screen.width > 500){
+if (screen.width > 1000){
     window.onscroll = function() {
         var currentScrollPos = window.scrollY;
         
@@ -59,8 +59,14 @@ if (screen.width > 500){
         }
     });
 } else {
-    maxHeight = 60;
-    minHeight = 0;
+    if(screen.width <= 500){
+        maxHeight = 60;
+        minHeight = 0;
+    } else {
+        maxHeight = 80;
+        minHeight = 0;  
+    }   
+
     window.onscroll = function() {
         var currentScrollPos = window.scrollY;
         
