@@ -96,8 +96,13 @@
     }
     .head-logo{
         display:none;
-        width:0;
-        height:0;
+        width: 0;
+        height: 0;
+    }
+    .head-logo-left{
+        display:flex;
+        align-items:center;
+        justify-content: center;
     }
     .head-element img{
         /*nothing*/

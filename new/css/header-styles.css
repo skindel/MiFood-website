@@ -101,7 +101,12 @@
         padding-left:50px;
         padding-right:50px;
     }
-    .head-element img{
+        .head-logo-left{
+            display:none;
+            width: 0;
+            height: 0;
+        }
+    .head-logo img{
         max-width: auto;
         height: var(--logo-height);
 
