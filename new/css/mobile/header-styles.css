@@ -1,8 +1,8 @@
-
 :root{
-    --head-height: 100px;   
+    --head-height: 60px;   
     --head-height-no-anim: 100px;
     --head-circumference: 30000px;
+    --head-circ-height:60px;
     --logo-height: 40px;
 
     --scroll-anim-duration: 0.3s;
@@ -29,7 +29,7 @@
 
     position:absolute;
     left:50%;
-    top: calc(var(--head-circumference)*-1 + var(--head-height));
+    top: calc(var(--head-circumference)*-1 + var(--head-circ-height));
 
     transform: translate(-50%, 0);
 
@@ -47,14 +47,11 @@
 
 }
 #head-container{
-    width: 300px;
-
-    margin-left: auto;
-    margin-right: auto;
+    width: inherit;
 
     height: var(--head-height);
 
-    clip-path: circle(calc(var(--head-circumference)/2) at 50% calc(var(--head-circumference)/-2 + var(--head-height)));
+    clip-path: circle(calc(var(--head-circumference)/2) at 50% calc(var(--head-circumference)/-2 + var(--head-circ-height)));
 
     transition: clip-path var(--scroll-anim-duration) ease 0s, height var(--scroll-anim-duration) ease 0s;
 
@@ -63,23 +60,18 @@
 .head-part{
     float:left;
 
-    height: calc(var(--head-height)/2);
-    width: 150px;
+    height: calc(var(--head-height));
+    margin-top: calc(var(--head-height)/10);
+    width: 30%;
 }
 
     .head-element{
-        z-index: 10;
-        float: none;
+        height: calc(var(--head-height)/2.5);
+        line-height: calc(var(--head-height)/2.5);
+        text-align: left;
 
-        width: 150px;
-        height: calc(var(--head-height)/2);
-
-        line-height: calc(var(--head-height)/2);
-        text-align: center;
-
-        font-size:20px;
-        font-weight: 1000;
-            
+        font-size:15px;
+        font-weight: 800;
     }
 
     /* .h-side{
@@ -100,10 +92,18 @@
         height: 0;
     }
     .head-logo-left{
-        display:flex;
+        display: flex;
+        
+        width: 30%;
+        margin-right:5%;
+        margin-top:0;
         align-items:center;
         justify-content: center;
+
+        float:left;
+        height: calc(var(--head-height));
     }
-    .head-element img{
-        /*nothing*/
-    }
+        .head-logo-left img{
+            max-width: auto;
+            height: 23px;
+        }
