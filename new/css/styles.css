@@ -30,6 +30,11 @@ main{
     height: auto;
 }
 
+.mobile{
+    display:none;
+    width: 0;
+    height: 0;
+}
 
 
 .title-container{
