@@ -1,0 +1,25 @@
+/*Content text*/
+.main-title{
+    font-size: 35px;
+}
+
+.text-title{
+    padding: 20px;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+.text-title-2{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.text-content{
+    padding: 20px;
+    
+    font-size: 25px;
+    font-weight: 300;
+}
+.text-window-head{
+    font-size:54px;
+}
