@@ -167,7 +167,7 @@ main{
 
 footer{
     width:auto;
-    height:250px; 
+    height:150px; 
 
     margin-top: 150px;
     padding-left:7%;
@@ -180,26 +180,26 @@ footer{
 
     }
     .list-contact{
-        width: 31%;
-        height: 250px;
-        padding:1%;
-        font-size: 22px;
+        width: 30%;
+        min-width: 100px;
+        height: 150px;
+        padding-right:3%;
 
-        line-height: 15px;
+        line-height: 20px;
         margin-left: 0;
         
         float:left;
     }
 
         .list-contact p{
-            font-size: 12px;
+            font-size: 18px;
             font-weight: 700;
 
             margin-bottom:10px;
 
         }
         .list-contact a{
-            font-size:8px;
+            font-size:12px;
         }
         .list-contact br{
             /* line-height: 5px; */
@@ -226,14 +226,13 @@ footer{
         }
 
         .sm-content{
-            height: 400px;
             width:auto;
         
-            padding-left: 100px;
-            padding-right: 100px;
+            padding-left: 50px;
+            padding-right: 50px;
         
             
-            padding-top: 200px;
+            padding-top: 150px;
         }
             .sm-content:after{
                 clear:both;

@@ -72,8 +72,13 @@
         line-height: calc(var(--head-height));
         text-align: center;
 
-        font-size:15px;
+        font-size:14px;
         font-weight: 800;
+    }
+    @media screen and (min-width: 650px) {
+        .head-element{
+            font-size: 16px;
+        }
     }
 
     /* .h-side{
