@@ -4,13 +4,25 @@
     <title>MiFood robots</title>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- styles -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/header-styles.css">
-    <link rel="stylesheet" href="css/text-styles.css">
-    <link rel="stylesheet" href="css/circle-styles.css">
+    <!--      styles      -->
+        <!--    main    -->
+            <link rel="stylesheet" media = "screen and (min-width:1000px)" href="css/styles.css">
+            <link rel="stylesheet" media="screen and (max-width:1000px) and (min-width:651px)" href="css/tablet/styles.css">
+            <link rel="stylesheet" media="screen and (max-width:650px)" href="css/mobile/styles.css">
 
+        <!--    header styles   -->
+            <link rel="stylesheet" media="screen and (min-width:1000px)" href="css/header-styles.css">
+            <link rel="stylesheet" media="screen and (max-width:1000px) and (min-width:501px)" href="css/tablet/header-styles.css">
+            <link rel="stylesheet" media="screen and (max-width:500px)" href="css/mobile/header-styles.css">
+
+        <!--    text styles   -->
+            <link rel="stylesheet" media="screen and (min-width:1000px)" href="css/text-styles.css">
+            <link rel="stylesheet" media="screen and (min-width:651px) and (max-width:1000px)" href="css/tablet/text-styles.css">
+            <link rel="stylesheet" media="screen and (max-width:650px)" href="css/mobile/text-styles.css">
+        <!--    circles    -->
+        <link rel="stylesheet" href="css/circle-styles.css">
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,23 +35,31 @@
         <div id="head-circle"></div>
 
         <div id= "head-container" class="clearfix">
-
-            <div class="head-element h-side h-left">
-                <a href="contact.html">Contact us</a>
+            <a href="index.html" class="head-element head-logo-left" id="head-logo">
+                <img src="img/whitelogotransparent.png">
+            </a>
+            
+            <div class="head-part">
+                <div class="head-element h-side h-left">
+                        <a href="contact.html">Contact us</a>
+                </div>
+                <div class="head-element h-middle h-left">
+                        <a href="agriculture.html">Agriculture</a>
+                </div>
             </div>
-            <div class="head-element h-middle h-left">
-                <a href="agriculture.html">Agriculture</a>
-            </div>
+ 
 
             <a href="index.html" class="head-element head-logo" id="head-logo">
                 <img src="img/whitelogotransparent.png">
             </a>
 
-            <div class="head-element h-middle h-right">
-                <a href="for_investors.html">For investors</a>
-            </div>
-            <div class="head-element h-side h-right">
-                <a href="socialmedia.html">Social Media</a>
+            <div class="head-part">
+                <div class="head-element h-middle h-right">
+                    <a href="for_investors.html">For investors</a>
+                </div>
+                <div class="head-element h-side h-right">
+                    <a href="socialmedia.html">Social Media</a>
+                </div>
             </div>
         </div>
 
@@ -48,7 +68,10 @@
     <main>
         <div class="sm-content">
             <div class="sm-title"> 
-                <t style="color:var(--green);">Find</t> <t style="color:var(--red);">us here:</t>
+                <div class="main-title">
+                    <t style="color:var(--green);">Find</t> <t style="color:var(--red);">us here:</t>
+
+                </div>
             </div>
             <div class="sm-links">
 

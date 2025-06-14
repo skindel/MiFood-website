@@ -203,7 +203,89 @@ main{
     }
 
 
+.sm-content{
+    height: 400px;
+    width:auto;
 
+    padding-left: 100px;
+    padding-right: 100px;
+
+    
+    padding-top: 200px;
+}
+    .sm-content:after{
+        clear:both;
+    }
+    .sm-title{
+        width: 100%;
+        font-size:55px;
+        padding: 20px;
+        padding-left: 0;
+
+        font-weight: 700;
+    }
+    .sm-links{
+        height:fit-content;
+        padding:20px;
+        padding-top:30px;
+        padding-bottom:100px;
+
+        margin-top:40px;
+    }
+        .sm-element{
+            text-align:center;
+            float:left;
+    
+            width: 20%;
+    
+            padding-top: 20px;
+            padding-bottom:20px;
+            
+            margin:2%;
+    
+            font-size:25px;
+            color:black;
+    
+            background-color: white;
+    
+            border: 3px solid black;
+            border-radius: 20px;
+    
+            box-shadow: 0 0 0 0  rgba(0,0,0,0.4);
+    
+            transition: ease 0.2s all;
+    
+        }
+            .sm-element:hover{
+                /*background-color: #01af049a;*/
+                color:var(--red);
+                border: 3px solid var(--red);
+    
+                box-shadow: 0 0 3px 0  var(--red);
+            }
+            .sm-element:nth-child(odd):hover {
+                color:var(--red);
+                border: 3px solid var(--red);
+    
+                box-shadow: 0 0 3px 0  var(--red);
+            }
+            .sm-element:nth-child(even):hover {
+                    /*background-color: #01af049a;*/
+                    color:var(--green);
+                    border: 3px solid var(--green);
+        
+                    box-shadow: 0 0 3px 0  var(--green);
+            }
+
+.download-list{
+
+}
+    .download-list li{
+        padding:5px;
+    }
+    .download-list li a{
+        text-decoration: underline solid 2px;
+    }
 
 /*      ---FOOTER---      */
 
@@ -258,89 +340,7 @@ footer{
             padding-top: 20px;
         }
 
-        .sm-content{
-            height: 400px;
-            width:auto;
         
-            padding-left: 100px;
-            padding-right: 100px;
-        
-            
-            padding-top: 200px;
-        }
-            .sm-content:after{
-                clear:both;
-            }
-        .sm-title{
-            width: 100%;
-            font-size:55px;
-            padding: 20px;
-            padding-left: 0;
-
-            font-weight: 700;
-        }
-        .sm-links{
-            height:fit-content;
-            padding:20px;
-            padding-top:30px;
-            padding-bottom:100px;
-
-            margin-top:40px;
-        }
-            .sm-element{
-                text-align:center;
-                float:left;
-        
-                width: 20%;
-        
-                padding-top: 20px;
-                padding-bottom:20px;
-                
-                margin:2%;
-        
-                font-size:25px;
-                color:black;
-        
-                background-color: white;
-        
-                border: 3px solid black;
-                border-radius: 20px;
-        
-                box-shadow: 0 0 0 0  rgba(0,0,0,0.4);
-        
-                transition: ease 0.2s all;
-        
-            }
-                .sm-element:hover{
-                    /*background-color: #01af049a;*/
-                    color:var(--red);
-                    border: 3px solid var(--red);
-        
-                    box-shadow: 0 0 3px 0  var(--red);
-                }
-                .sm-element:nth-child(odd):hover {
-                    color:var(--red);
-                    border: 3px solid var(--red);
-        
-                    box-shadow: 0 0 3px 0  var(--red);
-                }
-                .sm-element:nth-child(even):hover {
-                        /*background-color: #01af049a;*/
-                        color:var(--green);
-                        border: 3px solid var(--green);
-            
-                        box-shadow: 0 0 3px 0  var(--green);
-                }
-
-    .download-list{
-
-    }
-        .download-list li{
-            padding:5px;
-        }
-        .download-list li a{
-            text-decoration: underline solid 2px;
-        }
     /*      --- TILES ---
     .center-tiles{
         display:flex;
