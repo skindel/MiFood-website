@@ -166,14 +166,14 @@ main{
 
 
 footer{
-    width:100%;
-    height:200px; 
+    width:auto;
+    height:250px; 
 
     margin-top: 150px;
-    padding-left:5%;
-    padding-right:5%;
+    padding-left:7%;
+    padding-right:7%;
 
-    box-shadow: 0 0 10px rgb(160, 160, 160);
+
 }
     .footer-left{
         height: 100%;
@@ -183,9 +183,9 @@ footer{
         width: 31%;
         height: 250px;
         padding:1%;
-        font-size: 18px;
+        font-size: 22px;
 
-        line-height: 20px;
+        line-height: 15px;
         margin-left: 0;
         
         float:left;
