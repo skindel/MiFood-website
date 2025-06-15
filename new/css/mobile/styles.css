@@ -112,7 +112,9 @@ main{
         text-align: center;
     }
     .content-image{ 
-        background-size: cover; 
+        background-size: cover;
+        background-position-x: center; 
+        background-position-y: center; 
     }
     .left-element.icons-content{
         margin-top: 30px;

@@ -137,7 +137,8 @@ main{
 
         margin-top: 100px;
 
-        background-position: center; 
+        background-position-x: center; 
+        background-position-y: center;
         background-repeat: no-repeat; 
         background-size: cover;
 
