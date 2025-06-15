@@ -64,7 +64,7 @@ main{
     }
 
 
-.center-content{
+.center-content .contact-content{
     height: 600px;
     width: auto;
 
@@ -72,6 +72,9 @@ main{
     padding-left: 100px;
     padding-top: 200px;
 }    
+    .contact-content{
+        margin-top:200px;
+    }
     .center-window{
         width: 80%;
         height: 600px;

@@ -85,12 +85,12 @@ main{
         box-shadow: rgba(0,0,0,0.2) 0 0 30px 0;
     }
         .window-content{
-            width: 80%;
+            width: 86%;
             height: 80%;
             
             margin-right:auto;
             margin-left:auto;
-            padding:10%;
+            padding:7%;
             margin-bottom: auto;
 
         }
@@ -109,6 +109,19 @@ main{
             .split-vert-2::after{
                 clear:both;
             }
+
+
+/* contact resp */
+    .contact-content{
+        width: auto;
+
+        margin-top: 200px;
+        margin-right: 45px;
+        margin-left:45px;
+    }
+
+
+
 .left-container{
     height: 1000px;
     width: 100%;
