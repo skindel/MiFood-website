@@ -26,7 +26,8 @@ var maxImgHeight = 50;
 var minImgHeight = 40;
 var newImgHeight;
 
-if (screen.width > 1000){
+if (window.width > 1000){
+    console.log(">1000");
     window.onscroll = function() {
         var currentScrollPos = window.scrollY;
         
@@ -34,7 +35,6 @@ if (screen.width > 1000){
             newCircumference = maxCircumference; 
             newHeight = maxHeight;
             newImgHeight = maxImgHeight;
-            console.log(newHeight);
         } else {
             newCircumference = minCircumference; 
             newHeight = minHeight;
@@ -59,10 +59,14 @@ if (screen.width > 1000){
         }
     });
 } else {
-    if(screen.width <= 500){
+    if(window.width <= 500){
+        console.log("tablet");
+
         maxHeight = 60;
         minHeight = 0;
     } else {
+        console.log("mobile");
+
         maxHeight = 80;
         minHeight = 0;  
     }   
